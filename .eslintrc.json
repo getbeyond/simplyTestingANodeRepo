@@ -1,0 +1,15 @@
+{
+  "extends": "peach/backend",
+  "globals": {
+    "mochaOptionsNeeded": true
+  },
+  "rules": {
+    "require-jsdoc": 0,
+    "valid-jsdoc": 0,
+    "indent": 0,
+    "no-unused-vars": 1,
+    "no-trailing-spaces": 1,
+    "curly": 2,
+    "handle-callback-err": 2
+  }
+}

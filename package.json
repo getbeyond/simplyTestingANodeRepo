@@ -1,0 +1,23 @@
+{
+  "name": "arepothattests",
+  "version": "0.0.1",
+  "author": "Peach <peachdev@whentomanage.com>",
+  "contributors": [
+    {
+      "name": "Matt Craig",
+      "email": "matt.craig@getbeyond.com"
+    }
+  ],
+  "keywords": [
+    "beyondone",
+    "tests"
+  ],
+  "devDependencies": {
+    "bunyan": "1.8",
+    "eslint": "5",
+    "eslint-config-peach": "1",
+    "mocha": "5",
+    "should": "13"
+  },
+  "engine": "node >= 6.x"
+}

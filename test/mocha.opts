@@ -1,0 +1,9 @@
+--require should
+--ui bdd
+--globals mochaOptionsNeeded
+--recursive
+--timeout 240000
+--bail
+--slow 500
+--check-leaks
+--colors
