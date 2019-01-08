@@ -3,15 +3,17 @@
 
 const should = require('should')
 const request = require('superagent')
+const postmanEchoUrl = 'https://postman-echo.com/get?beyond=thepeaches'
 
 describe('Making external calls works, too', () => {
 
   it('should ping and pong the Peach-API and return a promise to mocha', () => {
 
     return request
-      .get('https://api.peachworks.com/ping')
+      .get(postmanEchoUrl)
       .then(response => {
-        response.body.should.have.property('pong', true)
+        response.statusCode.should.equal(200)
+        response.body.should.have.property('url', postmanEchoUrl)
       })
       .catch(err => {
         should.not.exist(err)
