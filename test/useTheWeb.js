@@ -7,7 +7,7 @@ const postmanEchoUrl = 'https://postman-echo.com/get?beyond=thepeaches'
 
 describe('Making external calls works, too', () => {
 
-  it('should ping and pong the Peach-API and return a promise to mocha', () => {
+  it('should get an echo from a public server and return a promise to mocha', () => {
 
     return request
       .get(postmanEchoUrl)
