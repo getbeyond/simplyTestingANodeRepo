@@ -10,9 +10,11 @@ describe('Making external calls works, too', () => {
 
     return request
       .get('https://api.peachworks.com/ping')
-      .then((response, err) => {
-        should.not.exist(err)
+      .then(response => {
         response.body.should.have.property('pong', true)
+      })
+      .catch(err => {
+        should.not.exist(err)
       })
 
   })
