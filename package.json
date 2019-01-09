@@ -17,7 +17,8 @@
     "eslint": "5",
     "eslint-config-peach": "1",
     "mocha": "5",
-    "should": "13"
+    "should": "13",
+    "superagent": "4"
   },
   "engine": "node >= 6.x"
 }

@@ -11,12 +11,13 @@ before(done => {
   return done()
 })
 
-describe('Our first and only test', () => {
-  it('should find that global variable', done => {
+describe('Our first test', () => {
+
+  it('should find that global variable', () => {
     // someone setup a global, shame on them
     should.exist(mochaOptionsNeeded)
-    return done()
   })
+
 })
 
 after(done => {
