@@ -12,7 +12,7 @@ DEBUG = ''
 
 #all other options come from test/mocha.opts
 run_tests:
-		-@NODE_ENV=test DEBUG=$(DEBUG) $(MOCHA) --exit test/smoke_test $(TESTS)
+		-@NODE_ENV=test DEBUG=$(DEBUG) $(MOCHA) test/smoke_test $(TESTS)
 
 ###########################################
 # Below are intented to be run
