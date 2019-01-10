@@ -5,7 +5,6 @@ MOCHA = ./node_modules/mocha/bin/mocha
 TESTS = test
 
 # console logging for a section of the code (csv's), available options are in README.md
-# DEBUG = 'QueryIncludesDecorator QueryIncludeBag objects:middleware:index saml middleware:urlParamsProcessor'
 DEBUG = ''
 
 # these do not cache (this isn't c objects caching after all)
@@ -13,7 +12,7 @@ DEBUG = ''
 
 #all other options come from test/mocha.opts
 run_tests:
-		-@NODE_ENV=test DEBUG=$(DEBUG) $(MOCHA) test/smoke_test $(TESTS) | node_modules/.bin/bunyan
+		-@NODE_ENV=test DEBUG=$(DEBUG) $(MOCHA) --exit test/smoke_test $(TESTS)
 
 ###########################################
 # Below are intented to be run
@@ -21,7 +20,7 @@ run_tests:
 
 # setup development directories, permissions, and modules. One stop shop
 install:
-	npm update
+	npm install
 
 test: lint run_tests cleanup_after_test
 

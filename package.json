@@ -6,6 +6,10 @@
     {
       "name": "Matt Craig",
       "email": "matt.craig@getbeyond.com"
+    },
+    {
+      "name": "Paweł Sroka",
+      "email": "pawel.sroka@getbeyond.com"
     }
   ],
   "keywords": [
@@ -13,12 +17,12 @@
     "tests"
   ],
   "devDependencies": {
-    "bunyan": "1.8",
     "eslint": "5",
-    "eslint-config-peach": "1",
+    "lodash": "4",
     "mocha": "5",
     "should": "13",
-    "superagent": "4"
+    "superagent": "4",
+    "supertest": "3"
   },
   "engine": "node >= 6.x"
 }

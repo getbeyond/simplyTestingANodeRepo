@@ -2,8 +2,9 @@
 --ui bdd
 --globals mochaOptionsNeeded
 --recursive
---timeout 240000
+--timeout 5000
 --bail
 --slow 500
 --check-leaks
 --colors
+--exit

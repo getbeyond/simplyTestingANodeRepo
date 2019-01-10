@@ -1,5 +1,10 @@
 {
-  "extends": "peach/backend",
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
   "globals": {
     "mochaOptionsNeeded": true
   },
